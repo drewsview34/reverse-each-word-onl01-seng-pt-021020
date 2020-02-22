@@ -2,8 +2,10 @@ require 'pry'
 
 def reverse_each_word(string)
   #binding.pry
+  new_string = []
   words = string.split
   words.each do |word|
-    return words.reverse
+    new_string.unshift(word.reverse)
   end
+  new_string.join
 end
