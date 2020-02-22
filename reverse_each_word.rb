@@ -7,7 +7,7 @@ def reverse_each_word(string)
   words.each do |word|
     new_string.push(word.reverse)
   end
-  new_string.join(" ")
+  return new_string.join(" ")
 end
 
 def reverse_each_word(string)
@@ -17,5 +17,5 @@ def reverse_each_word(string)
   words.collect do |word|
     new_string.push(word.reverse)
   end
-  new_string.join(" ")
+  return new_string.join(" ")
 end
